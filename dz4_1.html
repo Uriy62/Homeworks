@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+        .circle {
+            position: relative;
+            width: 600px;
+            height: 600px;
+            border: 4px solid darkcyan;
+            border-radius: 50%;
+            margin: 2em;
+        }
+
+        .min {
+            position: absolute;
+            width: 6px;
+            height: 220px;
+            left: 297px;
+            top: 80px;
+            background: darkcyan;
+            transform-origin: 3px 220px;
+            animation: clock 60s infinite linear;
+        }
+
+        .sec {
+            position: absolute;
+            width: 4px;
+            height: 260px;
+            left: 298px;
+            top: 40px;
+            background: darkcyan;
+            transform-origin: 2px 260px;
+            animation: clock 15s infinite steps(60);
+
+        }
+
+        span {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            left: 294px;
+            top: 294px;
+            background: darkcyan;
+            border-radius: 50%;
+        }
+
+        @keyframes clock {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle">
+        <div class="min"></div>
+        <div class="sec"></div>
+        <span></span>
+    </div>
+</body>
+
+</html>

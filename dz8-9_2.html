@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <style>
+        .chat {
+            display: grid;
+            grid-template-columns: minmax(9ch, auto) 64px minmax(31ch, 50ch) 64px minmax(15ch, auto);
+            gap: 5px;
+            margin: 40px 0;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            align-items: center;
+        }
+
+        .Anie {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+
+        }
+
+        .message {
+            padding: 20px;
+        }
+
+        .first_person {
+            background-color: #FFB6C1;
+            border-radius: 20px 20px 20px 0;
+
+        }
+
+        .second_person {
+            background-color: #ADD8E6;
+            border-radius: 20px 20px 0;
+        }
+
+        span {
+            color: gray;
+            font-size: 9pt;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chat">
+        <div class="Anie">
+            Anie Smith <br>
+            <span>4 hours ago</span>
+        </div>
+        <img src="img/avatar_2.png" alt="Anie">
+        <div class="message first_person">Ut in enim scelerisque, pharetra velit id, maximus nunc</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="message second_person">Fusce auctor nibh at consequat efficitur</div>
+        <img src="img/avatar_1.png" alt="Jack">
+        <div>
+            Jack Silverston <br>
+            <span>4 hours ago</span>
+        </div>
+        <div class="Anie">
+            Anie Smith <br>
+            <span>4 hours ago</span>
+        </div>
+        <img src="img/avatar_2.png" alt="Anie">
+        <div class="message first_person">Etiam lacinia velit id venenatis sodales</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="message second_person">Mauris ac mi quis ante dignissim tempus in non nulla</div>
+        <img src="img/avatar_1.png" alt="Jack">
+        <div>
+            Jack Silverston <br>
+            <span>3 hours ago</span>
+        </div>
+        <div class="Anie">
+            Anie Smith <br>
+            <span>3 hours ago</span>
+        </div>
+        <img src="img/avatar_2.png" alt="Anie">
+        <div class="message first_person">Fusce quis ex fringilla, congue diam vel, sodales tortor</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="message second_person">Curabitur quis dolor eget elit pulvinar sollicitudin</div>
+        <img src="img/avatar_1.png" alt="Jack">
+        <div>
+            Jack Silverston <br>
+            <span>2 hours ago</span>
+        </div>
+    </div>
+</body>
+
+</html>

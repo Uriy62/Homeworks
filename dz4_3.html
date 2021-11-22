@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .container {
+            display: inline-flex;
+            margin: 1em;
+            flex-direction: column;
+        }
+
+        .text {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 700;
+            width: 450px;
+            background-color: pink;
+            font-size: 30pt;
+            display: flex;
+        }
+
+        .one {
+            color: red;
+        }
+
+        .two {
+            color: darkorange;
+        }
+
+        .three {
+            color: purple;
+        }
+
+        .image {
+            width: 450px;
+            height: 450px;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .image img {
+            width: 100%;
+            object-fit: cover;
+            transition: transform 1s ease-in-out;
+        }
+
+        .flex {
+            display: flex;
+            transition: filter .3s ease-in-out;
+        }
+
+        .flex:nth-child(2n+1) .image {
+            order: 1;
+        }
+
+        .flex:hover {
+            filter: brightness(.6);
+
+        }
+
+        .flex:hover img {
+            transform: scale(1.1);
+        }
+
+        span {
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex">
+            <div class="image">
+                <script>
+                    a = Math.floor(Math.random() * 7) + 1;
+                    document.write('<img src="images/Diane_Kruger/' + a + '.jpg"/>');
+                </script>
+            </div>
+            <div class="text one">
+                <span>Diane Kruger</span>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="image">
+                <script>
+                    a = Math.floor(Math.random() * 10) + 1;
+                    document.write('<img src="images/Alexis_Bledel/' + a + '.jpg"/>');
+                </script>
+            </div>
+            <div class="text two">
+                <span>Alexis Bledel</span>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="image">
+                <script>
+                    a = Math.floor(Math.random() * 7) + 1;
+                    document.write('<img src="images/Liza_Arzamasova/' + a + '.jpg"/>');
+                </script>
+            </div>
+            <div class="text three">
+                <span>Liza Arzamasova</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

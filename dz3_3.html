@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Структура сайта</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 14pt;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        }
+
+        body * {
+            margin-bottom: 10px;
+        }
+
+        body {
+            margin: 30px auto;
+            min-width: 960px;
+            max-width: 97%;
+        }
+
+        header {
+            padding: 30px 60px;
+            background: #923158;
+        }
+
+        .nav_footer {
+            background: #6E1237;
+            padding: 20px 60px;
+        }
+
+        .aside1 {
+            padding: 30px 60px;
+        }
+
+        .aside2 {
+            padding: 30px 60px 80px;
+            clear: left;
+        }
+
+        .float_left {
+            float: left;
+            width: 23%;
+        }
+
+        .aside3 {
+            float: right;
+            width: 12%;
+            padding: 30px 50px 40px 60px;
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+        }
+
+        .background2 {
+            background: #B65B80;
+        }
+
+        main {
+            margin: 0 calc(12% + 10px) 10px calc(23% + 10px);
+            padding: 30px 60px 30px;
+        }
+
+        section {
+            margin-top: 10px;
+            padding: 20px 60px 50px;
+            background: #DB92AF;
+        }
+
+        h4 {
+            margin: 0 -10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>header</header>
+    <nav class="nav_footer">menu</nav>
+    <aside class="aside3 background2">aside 3</aside>
+    <aside class="aside1 background2 float_left">aside 1</aside>
+    <aside class="aside2 background2 float_left">aside 2</aside>
+    <main class="background2">main content
+        <section>
+            <h4>section 1</h4>
+        </section>
+        <section>
+            <h4>section 2</h4>
+        </section>
+    </main>
+    <footer class="nav_footer">footer</footer>
+</body>
+
+</html>

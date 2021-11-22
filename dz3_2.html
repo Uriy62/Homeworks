@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        aside {
+            margin: 30px;
+            width: 330px;
+            font-size: 15pt;
+            color: white;
+            background-color: gray;
+            text-transform: uppercase;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        }
+
+        div {
+            padding: 3.5%;
+            display: flex;
+        }
+
+        div:hover {
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        div::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        img {
+            width: 90px;
+            float: left;
+        }
+
+        span {
+            margin: auto 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <aside>
+        <div><img src="icons/edit.png" alt="Pencil"><span>edit</span></div>
+        <div><img src="icons/favorites.png" alt="Heart"><span>favorites</span></div>
+        <div><img src="icons/history.png" alt="Clock"><span>history</span></div>
+        <div><img src="icons/security.png" alt="Sheld"><span>security</span></div>
+        <div><img src="icons/settings.png" alt="Settings"><span>settings</span></div>
+    </aside>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorial</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        }
+
+        body {
+            margin: 70px 40px 50px;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        code {
+            color: firebrick;
+            background: #e5e4e2;
+        }
+
+        dfn {
+            font-style: normal;
+        }
+
+        hr {
+            border: none;
+            border-top: gray 2px solid;
+        }
+
+        pre,
+        pre code {
+            font-family: monospace;
+            font-size: 11pt;
+            background: #e5e4e2;
+        }
+
+        span {
+            font-style: italic;
+        }
+
+        a {
+            text-decoration: none;
+            color: darkturquoise;
+            background: #e5e4e2;
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>HTML Tutorial</h1>
+        <hr>
+    </header>
+
+    <main>
+        <h2>What is HTML?</h2>
+        <p>
+            <dfn><strong>Hypertext Markup Language (<abbr title="Hypertext Markup Language">HTML</abbr>)
+                </strong></dfn> is the standard markup language for creating web pages and web applications.
+        </p>
+        <p>
+            Web browsers receive <abbr title="Hypertext Markup Language">HTML</abbr> documents from
+            a web server or from local storage and render the documents into multimedia web pages.
+            <abbr title="Hypertext Markup Language">HTML</abbr> describes the structure of a web
+            page semantically and originally included cues for the appearance of the document.
+        </p>
+        <p>
+            <abbr title="Hypertext Markup Language">HTML</abbr> elements are the building
+            blocks of <abbr title="Hypertext Markup Language">HTML</abbr> pages.
+            With <abbr title="Hypertext Markup Language">HTML</abbr> constructs, images and
+            other objects such as interactive forms may be embedded into the rendered page.
+            <abbr title="Hypertext Markup Language">HTML</abbr> provides a means to create
+            structured documents by denoting structural semantics for text such
+            as headings, paragraphs, lists, links, quotes and other items.
+            <abbr title="Hypertext Markup Language">HTML</abbr> elements are
+            delineated by<span>tags</span>, written using angle brackets.
+            Tags such as <code>&lt;img /&gt;</code> and <code>&lt;input /&gt;</code>
+            directly introduce content into the page.
+            Other tags such as <code>&lt;p&gt;</code> surround and provide information
+            about document text and may include other tags as sub-elements.
+            Browsers do not display the <abbr title="Hypertext Markup Language">HTML</abbr>
+            tags, but use them to interpret the content of the page.
+        </p>
+        <hr>
+
+        <h2>Markup</h2>
+        <p>
+            <abbr title="Hypertext Markup Language">HTML</abbr> markup consists of several key components,
+            including those called <span>tags</span> (and their <span>attributes</span>),
+            character-based <span>data types, character references</span>
+            and <span>entity references</span>.
+            <abbr title="Hypertext Markup Language">HTML</abbr> tags most commonly come in
+            pairs like <code>&lt;h1&gt;</code> and <code>&lt;/h1&gt;</code>, although some represent
+            <span>empty elements</span> and so are unpaired, for example <code>&lt;img&gt;</code>.
+            The first tag in such a pair is the <span>start tag</span>, and the second is the
+            <span>end tag</span> (they are also called <span>opening tags</span> and <span>closing tags</span>).
+        </p>
+        <p>
+            Another important component is the <abbr title="Hypertext Markup Language">HTML</abbr>
+            <span>document type declaration</span>, which triggers standards mode rendering.
+        </p>
+        <p>
+            The following is an example of the classic "Hello, World!" program:
+        </p>
+        <pre>
+            <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;</code>This is a title<code>&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;p&gt;</code>Hello world!<code>&lt;/p&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;</code>
+        </pre>
+        <hr>
+    </main>
+    <footer>
+        <h5>
+            Tags:
+            <a href="#">CodingScripting</a> <a href="#">head</a>
+            <a href="#">HTML</a> <a href="#">Introduction to HTML</a>
+            <a href="#">Landing</a> <a href="#">Links semantics</a>
+            <a href="#">Structure</a> <a href="#">Text</a>
+        </h5>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список задач</title>
+    <style>
+        body {
+            margin: 0 40px 40px;
+            font-size: 12pt;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        }
+
+        ul {
+            margin-left: -40px;
+            list-style-position: inside;
+        }
+
+        li {
+            padding: 10px 40px;
+            white-space: pre;
+            list-style-image: url(icons/unchecked_16.png);
+        }
+
+        span {
+            color: darkred;
+            font-weight: bold;
+            margin-left: 30px;
+        }
+
+        .sky {
+            background: #A5CCDA;
+        }
+
+        .blue {
+            background: #ADD8E6;
+        }
+
+        .grey {
+            background: #E2E2E2;
+            list-style-image: url(icons/checked_16.png);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>My To Do List</h2>
+    <ul>
+        <li class="sky"> Hit the gym <span>&times;</span></li>
+        <li class="grey"> <del>Pay bills</del> <span>&times;</span></li>
+        <li class="sky"> Meet John <span>&times;</span></li>
+        <li class="blue"> Buy eggs <span>&times;</span></li>
+        <li class="grey"> <del>Read a book</del> <span>&times;</span></li>
+        <li class="blue"> Organize office <span>&times;</span></li>
+        <li class="sky"> Eat dinner <span>&times;</span></li>
+        <li class="blue"> Buy apples <span>&times;</span></li>
+        <li class="sky"> Meet George <span>&times;</span></li>
+        <li class="blue"> Feed the cat <span>&times;</span></li>
+        <li class="grey"> <del>Write a letter</del> <span>&times;</span></li>
+        <li class="blue"> Run 1 km <span>&times;</span></li>
+    </ul>
+</body>
+
+</html>
