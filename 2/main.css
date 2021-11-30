@@ -1,0 +1,81 @@
+/* ОБЩАЯ ЧАСТЬ */
+        
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-container {
+    background: #f5f5f5;
+    margin: 30px 650px;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* ПЕРВЫЙ ВАРИАНТ */
+
+.hit {
+    margin: 7px;
+    padding: 0px 40px 10px;
+    background: #add8e6;
+    margin: 15px auto;
+    padding: 25px 50px;
+    vertical-align: middle;
+}
+
+.hit:nth-child(2n) {
+    background: #a5ccda;
+}
+
+.hit>div {
+    display: inline-block;
+}
+
+.simbol {
+    color: firebrick;
+    font-weight: bold;
+}
+
+.strikeout {
+    text-decoration: line-through;
+}
+
+div.text {
+    margin: auto 10px;
+}
+
+.checked {
+    background-color: #e2e2e2;
+}
+
+/* ВТОРОЙ ВАРИАНТ */
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    background: #add8e6;
+    padding: 25px 50px;
+    margin: 15px auto;
+}
+
+li:nth-child(2n) {
+    background: #a5ccda;
+}
+
+.checked {
+    background-color: #e2e2e2;
+}
+
+.symbol {
+    color: firebrick;
+    font-weight: bold;
+}
+
+span.text {
+    margin: auto 10px;
+}
